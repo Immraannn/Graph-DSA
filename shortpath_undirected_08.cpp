@@ -1,3 +1,10 @@
+// Algorithm
+// Start BFS from the source vertex.
+// Mark the source as visited.
+// Store the parent of each visited vertex.
+// When the destination is reached, reconstruct the path using the parent array.
+
+
 #include <iostream>      // For input and output
 #include <vector>        // For adjacency list and path
 #include <queue>         // For BFS
