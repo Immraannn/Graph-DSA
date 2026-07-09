@@ -1,3 +1,11 @@
+// A Topological Order is an ordering of the vertices of a Directed Acyclic Graph (DAG) such that:
+
+// For every directed edge u → v, vertex u appears before v in the ordering.
+
+// In simple words:
+
+// A node must appear before all the nodes that depend on it.
+
 #include <iostream>     // For input and output
 #include <vector>       // To store adjacency list
 #include <stack>        // To store topological order
