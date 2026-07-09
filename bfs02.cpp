@@ -118,3 +118,44 @@ int main() {
     // 1---2
     // |    \
     // 3-----4
+
+
+DRY RUN
+Queue   = [0]
+Visited = [T,F,F,F,F]
+Step 1
+Pop 0
+Output: 0
+Neighbours: 1,2
+Queue = [1,2]
+Visited = [T,T,T,F,F]
+Step 2
+Pop 1
+Output: 0 1
+Neighbours:
+0 (already visited)
+2 (already visited)
+3 (new)
+Queue = [2,3]
+Visited = [T,T,T,T,F]
+Step 3
+Pop 2
+Output: 0 1 2
+Neighbours:
+0 (visited)
+1 (visited)
+4 (new)
+Queue = [3,4]
+Visited = [T,T,T,T,T]
+Step 4
+Pop 3
+Output: 0 1 2 3
+Neighbours:
+1 (visited)
+4 (visited)
+Queue = [4]
+Step 5
+Pop 4
+Output: 0 1 2 3 4
+Queue = []
+Traversal ends.    
